@@ -20,11 +20,16 @@ dependencies = [
     "numpy>=1.26.4",
     "scipy>=1.12.0",
     "matplotlib>=3.8.3",
+    "ipython>=9.6.0",
+    "ipykernel>=7.1.0",
+    "networkx>=3.5.0",
+    "matplotlib>=3.10.7",
 ]
 
 [project.optional-dependencies]
 # Install via: pip install .[gpu]
 gpu = ["jax[cuda12]>=0.4.35"]
+dev = ["pytest", "black"]
 
 [tool.setuptools.packages.find]
 where = ["src"]
